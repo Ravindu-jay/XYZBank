@@ -1,4 +1,4 @@
-package com.mytest.flightbook;
+package com.mytest.xyzbank;
 
 
 import org.openqa.selenium.*;
@@ -22,7 +22,6 @@ public class BankManager {
 
     // customer's last name list
     List<String> lastNames;
-
 
     // customer's post codes
     List<String> postCodes;
@@ -115,10 +114,7 @@ public class BankManager {
        // implicitlyWait(100);
 
      //   System.out.println ("Record deleted");
-
-
     }
-
 
     public WebElement getElement(String xpath) {
         for (int x = 0; !driver.findElement(By.xpath(xpath)).isDisplayed() && x < 4; x++) {
@@ -141,3 +137,7 @@ public class BankManager {
         }
     }
 }
+
+
+
+
